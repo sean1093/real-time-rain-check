@@ -6,7 +6,7 @@ A small service for checking raining or not in Taiwan.
 [real-time-rain-check demo]
 [real-time-rain-check demo]: <http://sean1093.github.io/weather/rain-check-tw.html>
 
-![rain-check](https://github.com/sean1093/real-time-chat/blob/master/rain.png "rain-check")
+![rain-check](https://github.com/sean1093/real-time-rain-check/blob/master/rain.png "rain-check")
 
 
 ## Data Source 
