@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>		
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+	    <meta name="description" content="Real-time Rain Check Platform">
+	    <meta name="author" content="Sean Chou">
+	    <title>Real-time Rain Check Platform</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"> 
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+        <nav class="#0d47a1 blue darken-4" role="navigation">
+            <div class="nav-wrapper">
+            	<a id="logo-container" href="#" class="brand-logo center">Real-time Rain Check Platform</a>            
+            </div>
+        </nav>	
+        <ul id="slide-out" class="side-nav">
+            <li>
+            <span>請選擇地點</span>           	
+            	<select id="selectLocate">
+				</select>
+            </li>
+            <li>
+	            <div>
+	            	<div id='cityButton'></div>
+	            </div>
+            </li>
+        </ul>
+        <div id="controlDiv">
+        	<a data-activates="slide-out" class="button-collapse btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+        </div>
+        	<div id="infoWindow" class="card"></div>
+        </div>
+
+	    <div id="page-content-wrapper col s12">
+			<div id="map"></div>
+	    </div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script> 
+		<script src="http://sean1093.github.io/lib/js/jquery.blockUI.js"></script>
+		<script src="js/view.js"></script>
+		<script src="js/controller.js"></script>
+		<script src="js/model.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPQTZ6mCD_9F7EMWrUpHl5KUuApC7yEss&callback=initialize" async defer></script>
+	</body>
+</html>

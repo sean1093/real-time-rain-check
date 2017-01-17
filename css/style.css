@@ -1,0 +1,73 @@
+#map 
+{ 
+  width: 100%;
+  height: 90vh; 
+}
+
+#page-content-wrapper
+{
+	padding: 0px;
+}
+
+#controlDiv {
+    position:absolute;
+    right: 10%;
+    bottom: 5%;
+    z-index: 999;
+}
+
+#infoWindow {
+    position:absolute;
+    right: 5%;
+    top: 10%;
+    width: 200px;
+    height: 200px;
+    padding: 2px;
+    z-index: 999;
+    background-color: #ffffff;
+    opacity:0.80;
+    display: none;
+}
+
+
+@media screen and (max-width: 480px) {
+    #logo-container{
+        font-size: 16px;
+    }
+}
+
+
+.ball {
+    background-color: rgba(0,0,0,0);
+    border: 5px solid rgba(0,183,229,0.9);
+    opacity: .9;
+    border-top: 5px solid rgba(0,0,0,0);
+    border-left: 5px solid rgba(0,0,0,0);
+    border-radius: 50px;
+    box-shadow: 0 0 35px #2187e7;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    -moz-animation: spin .9s infinite linear;
+    -webkit-animation: spin .9s infinite linear;
+}
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    };
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    };
+}
