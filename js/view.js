@@ -67,7 +67,7 @@ function initialize() {
     }
 
     //get weather data
-    getWeatherData(); 
+    getWeatherData(setMarker); 
     // setInterval(getWeatherData,1200000); //20min auto refresh      	  
 }
 

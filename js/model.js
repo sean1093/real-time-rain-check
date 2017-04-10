@@ -1,7 +1,7 @@
 
 
 
-var getAjaxData = function(){
+var getAjaxData = function(callback){
     console.log("getAjaxData");
     var url = "http://opendata.epa.gov.tw/ws/Data/RainTenMin/?$format=json&callback=?";
 
@@ -10,7 +10,7 @@ var getAjaxData = function(){
             url: url,
             dataType: 'json',
             success: function(response) {
-                changeView(response);
+                callback(response);
                 $.unblockUI();
 
             },

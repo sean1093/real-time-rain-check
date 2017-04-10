@@ -1,13 +1,8 @@
 
-function getWeatherData(){
+function getWeatherData(callback){
     
     console.log("getWeatherData");
-    getAjaxData();
+    getAjaxData(callback);
     
-}
-
-function changeView(json){
-
-    setMarker(json);
 }
 
